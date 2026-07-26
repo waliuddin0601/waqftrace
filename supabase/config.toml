@@ -1,0 +1,7 @@
+project_id = "waqftrace"
+
+[functions.yield-optimizer]
+verify_jwt = false
+
+[functions.report-triage]
+verify_jwt = false

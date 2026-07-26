@@ -1,0 +1,111 @@
+{
+  "board_member_disclosure_demand": {
+    "who": "Abul Fateh Syed Bandagi Badesha Quadri, Member, Telangana State Waqf Board",
+    "date": "First reported ~June 7, 2026 (Deccan Chronicle), further covered June 17, 2026 (Telangana Today)",
+    "quote_or_summary": "Citing the State government's recent enhancement of registration market values and stamp duties, Bandagi Badesha called on the Telangana State Waqf Board to publish a comprehensive, public list of all leased/rented Waqf properties, and to appoint an independent Commission to assess fair, current market-based rents. He said many Waqf properties worth crores of rupees have allegedly been leased at extremely low, decades-old rents, causing huge financial losses to the Board. He specified the disclosure should include: name and location of property, name/details of the tenant or lessee, duration of the lease agreement, rent currently being paid, current registered market value, prevailing market rent, any arrears owed, and the legal status of occupancy. Quotes: 'Waqf properties are sacred institutions meant to benefit the Muslim community' and income from them is meant for 'the welfare of mosques, madrasas, orphanages, charitable institutions and other social and religious causes.' He argued disclosure cuts both ways: 'if everything has been managed properly, public disclosure will strengthen confidence in the Waqf Board,' while 'if irregularities exist, transparency will help initiate corrective measures.' He separately noted the community has 'a right to know how its properties are being administered.' This followed an earlier (Dec 2022) hardline stance where he urged a campaign to boycott the weddings of Waqf tenants who default on rent or pay far below market rate, calling this a violation of lease rules under the Waqf Act 1995 (as amended 2013).",
+    "source_url": [
+      "https://telanganatoday.com/telangana-waqf-board-member-seeks-disclosure-of-leased-properties-and-fair-rent-assessment",
+      "https://www.deccanchronicle.com/southern-states/telangana/waqf-board-urged-to-fix-fair-rents-1961982",
+      "https://indtoday.com/time-to-boycott-marriages-of-defaulting-waqf-tenants/"
+    ]
+  },
+  "known_lease_rent_examples": [
+    {
+      "property": "Madina Commercial Complex, near Charminar, Hyderabad (built during Nizam era for Hajj/Hejaz pilgrim welfare)",
+      "rent_or_lease_detail": "Over 500 shops; expected/fair annual revenue should exceed Rs 6 crore, but tenants pay outdated nominal rents fixed decades ago, with some defaulting entirely; unpaid arrears have accumulated to roughly Rs 30 crore. Rental disputes remain pending in courts; the Waqf Board has not evicted defaulters or revised rents.",
+      "source_url": "https://thefederal.com/category/states/south/telangana/telangana-waqf-board-encroachments-revenue-waqf-properties-180127"
+    },
+    {
+      "property": "Commercial property in Jodhpur, Rajasthan, under Rajasthan Waqf Board (tenant since 1989)",
+      "rent_or_lease_detail": "Mutawalli issued notice attempting to raise rent from Rs 7,700/month to Rs 50,000/month, basing the hike on 10% of current market value -- disputed as exceeding the statutory reserve-price formula (2.5% of market value under the Waqf Properties Lease (Amendment) Rules, 2020, Section/Rule 7). Tenant sought legal advice to resist the increase and file for injunction.",
+      "source_url": "https://www.vidhikarya.com/FreeLegalAdvice/50671/waqf-rent-related-matter"
+    },
+    {
+      "property": "Telangana State Waqf Board aggregate holdings (systemic, not a single property, but with named figures)",
+      "rent_or_lease_detail": "Board holds 77,538.07 acres on paper (officially valued around Rs 5 lakh crore), of which 57,423.91 acres (~75%) are under encroachment (estimated encroached value ~Rs 4 lakh crore). The Board actively controls about 20,110 acres yet collects only about Rs 5 crore in annual rent income across its entire portfolio -- illustrating the scale of nominal/uncollected rents. District breakdown of encroachment includes Medak (23,782 of 23,910 acres), Ranga Reddy (13,480 of 14,785), Adilabad (9,189 of 10,119), Mahbubnagar (7,864 acres), Hyderabad (1,469 of 1,785).",
+      "source_url": "https://thefederal.com/category/states/south/telangana/telangana-waqf-board-encroachments-revenue-waqf-properties-180127"
+    },
+    {
+      "property": "Manikonda Jagir Village land, Rangareddy district, Telangana (Dargah Hazrat Hussain Shah Wali claim)",
+      "rent_or_lease_detail": "Andhra Pradesh Waqf Board had claimed ownership of 1,654.32 acres valued at more than Rs 50,000 crore; Supreme Court ruled in favour of the state government (land held by state, not Waqf), resolving decades-old litigation and affecting numerous private landowners/institutions built on the disputed land.",
+      "source_url": "https://thefederal.com/category/states/south/telangana/telangana-waqf-board-encroachments-revenue-waqf-properties-180127"
+    },
+    {
+      "property": "Telangana Waqf Board missing property records (admitted in High Court)",
+      "rent_or_lease_detail": "Board admitted that records for 2,186 Waqf properties are missing entirely, illustrating why individual rent/tenant/mutawalli data is largely undisclosed -- reinforcing the need for a reconstructed transparency layer.",
+      "source_url": "https://thefederal.com/category/states/south/telangana/telangana-waqf-board-encroachments-revenue-waqf-properties-180127"
+    }
+  ],
+  "lease_rules": {
+    "educational_social_pct": "2% per annum of market value (set by 2015 amendment to the Waqf Properties Lease Rules, 2014, Rule 7); a further 2020 amendment reportedly reduced this floor to 1% per annum for hospitals, educational institutions and social-sector use (sources vary/conflict on the exact current post-2020 figure -- treat 1-2% as the illustrative range and cite both amendments)",
+    "commercial_pct": "2.5% per annum of market value (set by the 2015 amendment, Rule 7; retained at 2.5% in most 2020-amendment descriptions, though at least one source describes a reduction to 1.5% -- treat 1.5-2.5% as the illustrative range)",
+    "approval_thresholds": "Waqf Properties Lease Rules, 2014 (notified 3 June 2014) originally set reserve price at a flat 5% of market value; amended 26 August 2015 to split into the 2%/2.5% (social vs commercial) structure above. Rule 17 (long-term leases): a lease exceeding the short-term ceiling and extending up to 30 years may be granted for commercial, education, or health purposes only with State Government approval; originally leases over 1 year needed such approval with a 3-month deemed-approval window, later amended to leases over 3 years needing approval with a 45-day deemed-approval window (i.e., if the State Government does not respond within 45 days, permission is deemed granted). Separately, leases with assessed monthly rental income up to Rs 3,000 (as of 3 June 2014) do not require newspaper advertisement, while any property with assessed rental above Rs 3,000/month must go through competitive/highest-bidder tender. Mutawallis, Waqf Board members/managing-committee members and their close relatives (spouse, parents, children) are barred from bidding on leases of the property they administer. Market value = the value used for registering a conveyance at the Registrar/Sub-Registrar's office (i.e., government-notified guideline/circle-rate value).",
+    "source_url": [
+      "https://www.indialaw.in/blog/law/amendments-to-wakf-properties-2014/",
+      "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1562736&reg=3&lang=2",
+      "https://www.livelaw.in/waqf-property-leasing-rules/",
+      "https://advocatetanmoy.com/2020/07/14/how-to-give-waqf-property-on-lease-in-india/",
+      "https://www.vidhikarya.com/FreeLegalAdvice/50671/waqf-rent-related-matter"
+    ]
+  },
+  "existing_welfare_programs": [
+    {
+      "name": "Waqf-alal-aulad maintenance support via UMEED Portal (Rule 8(2), Unified Waqf Management, Empowerment, Efficiency and Development (UMEED) Rules, 2025)",
+      "administering_body": "Ministry of Minority Affairs, Government of India, in coordination with respective State/UT Waqf Boards",
+      "beneficiary_type": "widows, divorced women, orphans",
+      "scale_or_amount": "New (2025) digital module enabling widows, divorced women, and orphans to apply online for maintenance support from family/private ('waqf-alal-aulad') endowment properties, with Aadhaar-based beneficiary authentication and Direct Benefit Transfer (DBT) of the maintenance amount to bank accounts; specific rupee scale not centrally fixed (varies by property/case)",
+      "source_url": "https://www.business-standard.com/india-news/minority-affairs-ministry-adds-umeed-portal-module-to-aid-women-orphans-125082700915_1.html"
+    },
+    {
+      "name": "Central Waqf Council pre-matric and post-matric scholarship/fellowship schemes",
+      "administering_body": "Central Waqf Council (statutory body, Ministry of Minority Affairs)",
+      "beneficiary_type": "education",
+      "scale_or_amount": "Scholarships for minority students in Classes I-X (minimum 50% marks required; at least 30% of awards reserved for girls); fellowships for M.Phil/Ph.D. students (30% reserved for women); State Waqf Boards additionally receive 50%-matching-share grants from the Central Waqf Council for scholarships to students in Classes IX-XII, technical/ITI diploma courses, and Madrasa (Islamic) education",
+      "source_url": "https://www.examrace.com/Current-Affairs/NEWS-Scholarship-Schemes-for-Women-from-Central-Waqf-Council.htm"
+    },
+    {
+      "name": "Manipur Waqf Board one-time financial assistance for widows/destitute women",
+      "administering_body": "Manipur State Waqf Board",
+      "beneficiary_type": "widows",
+      "scale_or_amount": "One-time financial assistance to selected poor/needy widows and destitute women, continuously run since 1996-97; funded via a mandatory 7% contribution of net annual income from all registered Waqfs to the Board, plus state grants and Central Waqf Council matching-share scholarship grants; Board itself describes the assistance as limited/'meager' due to funding constraints",
+      "source_url": "https://waqfman.org/schemes/"
+    },
+    {
+      "name": "Punjab Waqf Board Pension Policy (widow, disability, old-age, destitute pensions)",
+      "administering_body": "Punjab Waqf Board",
+      "beneficiary_type": "widows",
+      "scale_or_amount": "Eligibility mirrors the Punjab Government Social Security Department's own pension schemes but restricted to Muslim beneficiaries; amount tracks the state Social Security pension rate (raised from Rs 500/month to Rs 750/month, with further proposed increase to Rs 1,500/month under old-age/widow/disability schemes)",
+      "source_url": "https://pbwaqf.in/punjabwakfboard/pdf/pension_form.pdf"
+    },
+    {
+      "name": "Karnataka State Wakf Foundation for Women Development -- medical assistance and Bidaai/Shaadi Bhagya marriage assistance",
+      "administering_body": "Government of Karnataka / Karnataka State Wakf Foundation for Women Development (state minority welfare scheme adjacent to the Wakf ecosystem, covers Muslim, Christian, Jain, Buddhist and Parsi minority women)",
+      "beneficiary_type": "marriage",
+      "scale_or_amount": "Rs 50,000 given per beneficiary at time of marriage to purchase essential household items under the Bidaai/Shaadi scheme; separately, up to Rs 1 lakh financial assistance to Muslim women for major medical treatment (e.g., cancer, heart surgery). Note: scheme has faced funding suspensions in some budget years.",
+      "source_url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fkarnataka-govt-puts-on-hold-marriage-assistance-scheme-for-minority-women-811861.html"
+    },
+    {
+      "name": "Telangana/undivided Andhra Pradesh Waqf Board mass marriage and orphanage sponsorship",
+      "administering_body": "Telangana State Waqf Board",
+      "beneficiary_type": "marriage",
+      "scale_or_amount": "Organizes mass/collective marriages for poor Muslim community members and sponsors orphanages in multiple cities; also runs vocational/technical training for Muslim youth. Specific per-beneficiary rupee figures not published.",
+      "source_url": "https://waqf.telangana.gov.in/schemes/"
+    }
+  ],
+  "waqf_development_corp": {
+    "role": "National Waqf Development Corporation Limited (NAWADCO) is a Government of India-owned Section 25 (not-for-profit) company under the Ministry of Minority Affairs, incorporated 31 December 2013 (established January 2014) following a recommendation of the Sachar Committee report. It provides technical, financial, and legal support to State Waqf Boards and Waqf institutions to redevelop under-utilized Waqf land into income-generating commercial/institutional assets, and also directly undertakes development projects (via partner developers/concessionaires) on Waqf land. Its funding model (using government/taxpayer funds to develop religiously-designated private endowment land) has drawn political criticism, including from Union Minister Smriti Irani, who called it an anomaly among Section 25 companies.",
+    "example_projects": [
+      "Partnership with NBCC (National Buildings Construction Corporation) -- 2015 project-specific MoU to develop four Waqf Board properties as institutional/commercial complexes at an estimated combined cost of Rs 398 crore: Gulistan Shadi Mahal, Masjid-e-Mavalli, and Dargah Hazrat Attaullah Shah (Bangalore, Karnataka) plus Takiya Chand Shah (Jodhpur, Rajasthan)",
+      "Earlier-stage NAWADCO/NBCC identification of a larger pipeline: one property in Delhi, two in Rajasthan, six in Madhya Pradesh, and seven in Karnataka earmarked for institutional/commercial redevelopment; two Rajasthan projects specifically advanced -- a hospital in Jodhpur and a school in Ajmer",
+      "Feasibility studies/evaluations completed for 10 Waqf properties across Andhra Pradesh, Bihar, Haryana, and Rajasthan by NAWADCO-engaged real estate experts, to be forwarded to respective State Governments for redevelopment approval",
+      "2023-era Expression of Interest (EoI) invited for development of Waqf properties at Panipat (Haryana) and Jaipur (Rajasthan)"
+    ],
+    "source_url": [
+      "https://en.wikipedia.org/wiki/National_Waqf_Development_Corporation_Limited",
+      "https://www.business-standard.com/article/markets/nbcc-gains-on-signing-project-specific-mou-with-nawadco-115051900128_1.html",
+      "https://www.business-standard.com/article/news-ani/mou-signed-for-development-of-waqf-properties-114090900162_1.html",
+      "https://centralwaqfcouncil.gov.in/content/national-waqf-development-corporation-limited-under-aegis-ministry-minority-affairs-govt-1",
+      "https://www.opindia.com/2023/04/smriti-irani-hints-at-taking-action-on-national-waqf-development-corporation-limited/"
+    ]
+  }
+}

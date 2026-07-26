@@ -1,0 +1,8 @@
+{
+  "name": "waqftrace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/seed.mjs"
+  }
+}

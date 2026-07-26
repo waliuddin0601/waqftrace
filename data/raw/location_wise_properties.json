@@ -1,0 +1,268 @@
+{
+  "documents_found": [
+    {
+      "title": "Hyderabad Ward-Wise Register No.5 (Ward No.1 to Ward No.25, GHMC) - Kitabul Aukaf Register",
+      "url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf",
+      "coverage": "Hyderabad GHMC, Wards 1-25 (Kabadiguda, Adikmet, Musheerabad, Hyderguda, Begumpet, Amberpet, Lingampally, Nampally, Khairtabad, etc.) - Hyderabad district",
+      "accessible": true,
+      "notes": "Official Telangana State Waqf Board scanned register, 398 pages, text-layer extractable via PDF parsing (pypdf). Contains individual property-level records with wakif name, class of wakf, property description, village/ward, boundaries (N/E/S/W), valuation, survey/municipal number, and registration/gazette history. Columns are jumbled by page-pair layout (data page + continuation page) but content is legible and was manually reconstructed for ~20 records here; document contains many hundreds more records not yet fully parsed."
+    },
+    {
+      "title": "Waqf Properties Location Wise Report (Telangana State Waqf Properties List) - Hayathnagar, Rangareddy sample",
+      "url": "https://www.scribd.com/document/461809695/Waqf-Properties-Location-Wise-Report",
+      "coverage": "Sample described as 6 properties in Hayathnagar, Rangareddy district (Chilla, 2 Ashoorkhanas, Graveyard, Dargah with ten tombs, Idgah, Mosque); full doc claimed to be 51 pages statewide",
+      "accessible": false,
+      "notes": "Scribd blocks full-text extraction; only preview/description text available. A separate fetch of the embed URL returned different apparent content (a 'Vakalanam State Waqf Board Report' dated 30-05-2023 covering Abdullahpur/Amberpet Dolan, Rajendranagar area, with survey codes like TSRR-16, TSRR-02, classified Rural/Urban, management type Administrator/Mutawalli/None) - this may be a different or updated version of the same Scribd ID; could not verify or extract structured rows, so no individual records from this source were included in the properties list below to avoid fabrication."
+    },
+    {
+      "title": "Waqf Properties in Rangareddy District (wb-RR-dist.pdf)",
+      "url": "https://www.scribd.com/document/434059323/wb-RR-dist-pdf",
+      "coverage": "30 Waqf institutions across villages in Rangareddy district: Balanagar, Ferozguda, Mailardevpally, Lachmiguda, Balapur, Rajendranagar, Malkajgiri, Saroornagar, Boinpally, Attapur, Hayathnagar (incl. Masjid Qutub Shahi with 52 rooms, 4 trees, 1 well; Ashoor Khana Pathargatti; Takia Man Saheb Ashoor Khana)",
+      "accessible": false,
+      "notes": "Scribd preview only; table structure (name, village, survey number, dry/wet land area, other properties, gazette notification number 6-A dt:9-2-89) described in summary but individual row data not extractable through preview. Not included in properties list to avoid fabrication."
+    },
+    {
+      "title": "Telangana State Waqf Board - Properties page (aggregate district statistics)",
+      "url": "https://waqf.telangana.gov.in/properties/",
+      "coverage": "All Telangana districts - aggregate only (institution counts, total acres, encroached acres per district; category counts of Dargah/Graveyard/Mosque/Ashoorkhana/Chilla/Takia/Others across 10 districts, 33,929 institutions total)",
+      "accessible": true,
+      "notes": "No individual property names, survey numbers, villages or boundaries - district/category rollups only. Useful for cross-checking aggregate totals but not for property-level records."
+    },
+    {
+      "title": "List of Waqf Properties (zakatindia.org)",
+      "url": "https://www.zakatindia.org/images5/List-of-Waqf-Properties.pdf",
+      "coverage": "Unknown - likely a scanned/image PDF",
+      "accessible": false,
+      "notes": "PDF returned only binary/compressed stream data on fetch, no extractable text layer. Could not confirm Telangana coverage or extract any records."
+    },
+    {
+      "title": "Waqf Properties in India (WAMSI mirror/search tool)",
+      "url": "https://waqf.zfiusa.org/",
+      "coverage": "Claims 30 states, 572 districts, 843,224 total properties nationally; Telangana state listed with 45,191 total properties",
+      "accessible": false,
+      "notes": "Interactive search-by-State/District/Sub-District interface; no bulk listing or direct record export found via fetch. Would require per-district interactive querying (not done here) to pull individual records."
+    }
+  ],
+  "properties": [
+    {
+      "name": "Wakf land (graveyard use) - Khoja Asna Ashri Jamat",
+      "category": "graveyard",
+      "village_mandal": "Kabadiguda, Ward No.1",
+      "district": "Hyderabad",
+      "survey_number": "1-3-1022",
+      "area": "2000 Sq. Yards (1671.26 Sq. Meters)",
+      "boundaries": "North: Road; East: Coca-Cola Factory; South: Land of Ghulam Dastagir Sahab; West: Coca-Cola Factory",
+      "status": "Registered Waqf property, held by 3 trustees for burying dead bodies of the Khoja Shia sect",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid Mahboob Begum Saheba",
+      "category": "mosque",
+      "village_mandal": "Ward No.1 (Adikmet/Yousuf Bagh area)",
+      "district": "Hyderabad",
+      "survey_number": "1-9-641/1 to 5",
+      "area": null,
+      "boundaries": "North: Road; East: Road; South: Road to Kohe Moula Ali; West: House of Sagir Ahmed",
+      "status": "Registered under Section 29, Muslim Wakf Act 1954; re-entered after property changes, File No.21/2/1970 (entry not attested per remarks)",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Sattar Bagh - Masjid and Dargah Hazrath Phool Shah Jalalee",
+      "category": "dargah",
+      "village_mandal": "Musheerabad, Ward No.3",
+      "district": "Hyderabad",
+      "survey_number": "1-4-952, 1-4-951 (associated buildings 1-4-970, 1-4-968, 1-4-969)",
+      "area": "Valued at Rs. 6,00,000 (Part A and Part B combined)",
+      "boundaries": "Part A - North: Building No.1-4-970; East: Subhas Talkies No.1-4-970/1; South: Cement Road, Secunderabad; West: Nala and houses of others. Part B - North: Galli; East: Buildings of Sattar Bagh; South: Ram Mandir No.1-4-968 & shops 1-4-969; West: Nala, hut & houses of others",
+      "status": "Registered Sunni Wakf; 1/4th income reserved for Masjid, Madrasa, Dargah, Haji assistance and orphans, 3/4th for donor family livelihood (Guzara)",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Gouri Manzil property (H.No.3-6/285), Hyderguda",
+      "category": "other",
+      "village_mandal": "Hyderguda, Ward No.3",
+      "district": "Hyderabad",
+      "survey_number": "3-6-285",
+      "area": "Valuation not numerically specified (recorded 'as per map', figures in Arabic script)",
+      "boundaries": "North: Houses of Dr. Qibala and Ashraf Mohammed Khan Sahab; East: Common Passage; South: House of Khairat Ali Sahab; West: Common Passage",
+      "status": "Registered under Section 29, Muslim Wakf Act 1954, Kitabul Aukaf File No.300/2/1956; family (Alal Aulad) waqf",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid-e-Mohammedia",
+      "category": "mosque",
+      "village_mandal": "Begumpet, Ward No.1",
+      "district": "Hyderabad",
+      "survey_number": "M.C.H. No. 1-11-50/15 (also referenced as 1-15-50/15)",
+      "area": "279.00 Sq. Yards / 249.24 Sq. Meters",
+      "boundaries": "Lane on North, East, South and West sides",
+      "status": "Wakf by user; registered 01-09-1982 under Section 25, Wakf Act 1954",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Ashoorkhana and Graveyard, Adikmet",
+      "category": "graveyard",
+      "village_mandal": "Adikmet, Ward No.1",
+      "district": "Hyderabad",
+      "survey_number": "M.C.H. No. 1-9-574 (Ashoorkhana), 1-9-789 (Graveyard)",
+      "area": null,
+      "boundaries": "Bounded variously by Road, House of Bakka Ramaiah, Seri/Road to Jamia Osmania, House of Molkanda (H.No.1-9-866), Mudiraj Sangam, and House of Yawar Khan and Anjiah (per component)",
+      "status": "Wakf by user (Sunni); registered 09-03-1982 under Section 25, Wakf Act 1954, valuation Rs.1000",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Mahdivia Club building",
+      "category": "other",
+      "village_mandal": "Musheerabad, Ward No.1",
+      "district": "Hyderabad",
+      "survey_number": "1-6-699",
+      "area": "3-storied R.C.C. building on approx. 90 x 64 Sq. Yards; valued at Rs.12,00,000 (later Rs.15,000/- annual)",
+      "boundaries": "North: Public Road and open land; East: Cement Road; South: House of Mahmood Ali Sahab; West: House of Mahmood Ali Sahab",
+      "status": "Registered waqf, Muntakhab No.864; touliath transferred to Trust Board Mahdivia Club (1964); rebuilt 1988; Kitab ul Aukaf Book No.5, Page No.6, Sl.No.11, Ward No.1",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Muslim Graveyard near Quadri Bagh",
+      "category": "graveyard",
+      "village_mandal": "Amberpet, Ward No.2, Block No.1",
+      "district": "Hyderabad",
+      "survey_number": "2-3-603/27-1",
+      "area": "Valued at Rs. 60,000",
+      "boundaries": "As per map; Part I towards North, Part II towards South (detailed boundary text illegible in extract)",
+      "status": "Sunni Wakf for burying Muslim dead bodies; maintained via subscription of approx. Rs.80 per month",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid Ibraheema",
+      "category": "mosque",
+      "village_mandal": "Patelnagar, Amberpet, Ward No.2",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": "Valuation Rs.25,000 (buildings including land)",
+      "boundaries": null,
+      "status": "Sunni Wakf Board; maintained to safeguard property and for daily prayers (Namaz)",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Graveyard at Faqueerguda (adjacent to Masjid Qutub Shahi)",
+      "category": "graveyard",
+      "village_mandal": "Lingampally (near Vysia Hostel), Ward No.2",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": null,
+      "boundaries": "As per map (detail not specified in visible extract)",
+      "status": "Sunni Wakf Board; to safeguard property and for burying dead bodies of the Waqif's family members",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid Majeedi Ek Minar",
+      "category": "mosque",
+      "village_mandal": "Nampally, Ward No.5, Block No.1-10",
+      "district": "Hyderabad",
+      "survey_number": "Sy.No.3/81; New Municipal No. 5-5-252 to 254",
+      "area": "3 mulgies (shops) with open land of dismantled musafirkhana",
+      "boundaries": "North: Masjidi Ek Minar; East: Public way; South: Bagh-e-Hussain Laqqa Bai; West: Road",
+      "status": "Registered under Section 29, Wakf Act 1954, File No.24/2/1958, dated 20-08-1971; managed by Majlis-e-Intezami",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Dargah Hazrath Shaik Madar Saheb",
+      "category": "dargah",
+      "village_mandal": "Nampally, Ward No.5",
+      "district": "Hyderabad",
+      "survey_number": "5-7-156",
+      "area": "Approximately 113 yards",
+      "boundaries": "As per map; property excluded in the map does not form part of the Waqf property",
+      "status": "Registered under Section 29, Wakf Act 1954, File No.25/2/1961, dated 13-04-1962; hereditary Mutawalli succession (Sharfuddin, then Ghousuddin, then Qutubuddin)",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Graveyard opposite Afzalganj bus stand (Dargah Sadaat)",
+      "category": "graveyard",
+      "village_mandal": "Ward No.5 (near Afzalganj)",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": "Valued at Rs.1000 (annual subscription approx. Rs.3000 kaldar)",
+      "boundaries": "Road on North, East, South and West sides",
+      "status": "Sunni Wakf; to safeguard the graveyard and the Dargah Sadaat, and to perform Jenda Gousepak rituals",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Graveyard near Dargah Hazrat Yousufian",
+      "category": "graveyard",
+      "village_mandal": "Nampally, Ward No.5",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": "Valued at Rs.2000",
+      "boundaries": "Bounded partly by House No.5-7-122 and land of Syed Mohd Raza Saheb (full boundary text not captured)",
+      "status": "Sunni Wakf for burying the family's Muslim dead bodies",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Ashoorkhana Imam Khasim",
+      "category": "other",
+      "village_mandal": "Nampally (opposite Masjid-e-Ek Minar), Ward No.5",
+      "district": "Hyderabad",
+      "survey_number": "MCH No.6-8-182 (Old) / 5-8-174/A/1 & 2 (New)",
+      "area": "287.07 Sq. Yards",
+      "boundaries": "North: Idaare Aneesul Ghurba; East: Main Road; South: Office of State Architecture; West: Main Road",
+      "status": "Wakf by user (Sunni), for erection of Alams; registered 21-04-1984 under Section 25, Wakf Act 1954",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Waqf property at Mukarram Jahi Road (H.No.5-4-370)",
+      "category": "other",
+      "village_mandal": "Ward No.5 (Mukarram Jahi Road)",
+      "district": "Hyderabad",
+      "survey_number": "5-4-370 (Old No.530/5B)",
+      "area": "1,370 Sq. Yards / 1,145 Sq. Meters; valued at Rs.42,00,000",
+      "boundaries": "North: Hotel Sampoorna; East: Mukarram Jahi Road; South: Housing Board Building; West: Open Land of Housing Board",
+      "status": "Sunni Wakf for promotion of Islamic education, Arabic language and technical training; annual valuation Rs.4200",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Chillah Ghouse-E-Pak",
+      "category": "other",
+      "village_mandal": "Patel Chaman, Nampally, Ward No.5",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": "53.75 Sq. Yards",
+      "boundaries": "North: Main Road; East: Open land; South: Municipal lid cap electric transformer; West: Municipal Office",
+      "status": "Sunni Wakf (Fateha-type)",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid-e-Qutub Shahi (Committee property)",
+      "category": "mosque",
+      "village_mandal": "Khairtabad, Ward No.6",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": null,
+      "boundaries": null,
+      "status": "Registered as Waqf land under Section 29, Wakf Act 1954, File No.15/2/1972, dated 11-05-1973; managed by Masjid-e-Qutub Shahi Committee",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Old Masjid, Risala Iqbal-ud-Daula street, Ghareeb Nagar",
+      "category": "mosque",
+      "village_mandal": "Begumpet, Ward No.6",
+      "district": "Hyderabad",
+      "survey_number": null,
+      "area": "100 x 62 = 688.9 Sq. Yards",
+      "boundaries": "North: Neighbour's house; East: Road; South: PIT Block No.24; West: Open land",
+      "status": "Registered as Waqf land under Section 29, Wakf Act 1954, File No.4/2/1974, dated 08-04-1974; maintained by Markazi Anjuman-e-Tahafuz Masajid and Quboor, Andhra Pradesh",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    },
+    {
+      "name": "Masjid Qutub Shahi and Madarsa Ishaatul Quran (three adjacent houses)",
+      "category": "mosque",
+      "village_mandal": "Khairtabad, Ward No.6",
+      "district": "Hyderabad",
+      "survey_number": "6-1-1025, 6-1-1030, 6-1-1031 (adjacent Waqf lands 6-1-1024/1026, 6-1-1029/1031, 6-1-1030/1032)",
+      "area": null,
+      "boundaries": "Each of the three houses bounded on one side by the Masjid and by Road/adjacent house numbers on the others; Municipal tax Rs.960",
+      "status": "Sunni Wakf to meet expenses of Masjid, Madarsa and publication of Quran (Ishaatul Quran); managed by Mohd Osman, Secretary of Managing Committee",
+      "source_url": "https://waqf.telangana.gov.in/wp-content/uploads/2024/05/Hyd-Ward-Wise-Reg-No.5-Big.pdf"
+    }
+  ]
+}

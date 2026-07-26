@@ -1,0 +1,26 @@
+# secrets — never commit these
+.env
+.env.local
+*.env
+*.save
+
+# local-only npm registry override (this sandbox's network workaround, not for CI/other machines)
+frontend/.npmrc
+
+# build cache
+*.tsbuildinfo
+
+# dependencies
+node_modules/
+frontend/node_modules/
+
+# build output
+frontend/dist/
+dist/
+
+# supabase local
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store

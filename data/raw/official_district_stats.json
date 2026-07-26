@@ -1,0 +1,129 @@
+{
+  "source_meta": [
+    {
+      "url": "https://waqf.telangana.gov.in/properties/",
+      "fetched_note": "Official Telangana State Waqf Board properties page. Contains two tables: (1) 'Indicative statement showing particulars of encroachment on Waqf institutions and attached properties in Telangana' — institutions, total area (acres), encroached area (acres) per district, with a state total row; (2) 'List of institutions in Telangana region category wise as per 1st survey' — category breakdown (Dargah, Graveyard, Mosque, Ashoorkhana, Chilla, Takia, Others) per district. Both tables use the 10 pre-2016 undivided ('old') Telangana districts, not the ~33 post-2016/2019 reorganised districts. Page explicitly states: 'Separation of data according to the new districts re organisation work is in progress' and carries the disclaimer: 'The published data is only informative, correctness of data should be re-verified by WAQF board without any legal binding.'"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Telangana_State_Waqf_Board",
+      "fetched_note": "Board history: predecessor 'Umoor-E-Mazhabi' body under the Nizam; Muslim Waqf Board established by notification No. 90 dated 13-01-1955 (Hyderabad Gazette), effective 15-01-1955; reconstituted as AP State Waqf Board in July 1996 under the Wakf Act 1995 (in force from 1-1-1996), later becoming Telangana State Waqf Board post state bifurcation. Cites same overall figures as the properties page: 32,157-33,929 institutions (figures vary by section) and 77,538 acres total, with 'more than 55,000 acres out of 77,000 encroached.' No explicit mention found of a 1960s/70s survey or its 1989 publication, or of the 2,186 missing-records High Court matter, within the fetched content."
+    },
+    {
+      "url": "https://thefederal.com/category/states/south/telangana/telangana-waqf-board-encroachments-revenue-waqf-properties-180127",
+      "fetched_note": "News analysis confirming state totals (33,929 institutions; 77,538.07 acres total; 57,423.91 acres [~75%] encroached; estimated value of encroached land ~Rs 4 lakh crore) and confirming the Waqf Board admitted to the Telangana High Court that records for 2,186 Waqf properties were missing (no case name/date given in article). Corroborates category totals: 1,869 dargahs, 8,521 graveyards, 3,052 mosques, 11,056 ashurkhanas, 6,789 chillas, 112 takias, 2,530 others."
+    },
+    {
+      "url": "web search: 'WAMSI Telangana Waqf portal district wise data public 2025' / 'Telangana Waqf Board district wise properties list 2025 2026'",
+      "fetched_note": "No newer official district-wise or mandal-wise PDF/dataset located beyond the properties page above. WAMSI (Waqf Assets Management System of India) was disabled 8 May 2025 and replaced by the UMEED portal (launched 6 June 2025); Telangana was still in the process of training staff and uploading property records as of October 2025 (per Telangana Waqf Board chairman Azmatullah Hussaini, via newsonair.gov.in), and this newer upload was reported in passing to cover 'around 85,000 properties' and '~20,000 mutawallis' across '77,000+ acres' — a figure roughly 2.5x the 33,929-institution count in the 1st-survey table, suggesting either a different unit of counting (individual property vs. institution) or substantial net-new registrations/corrections not yet reflected in any public district-wise table. This 85,000 figure has no district breakdown available and is NOT included in the districts array below because it cannot be reconciled with the district-level table."
+    },
+    {
+      "url": "https://indiankanoon.org/doc/91280701/ (P.Srinivas vs The State of Telangana, 10 March 2020)",
+      "fetched_note": "Court judgment discussing an earlier Waqf gazette notification dated 09-02-1989 (Boduppal village, Ac.294.20 guntas) that publicly notified certain lands as waqf property. Corroborates that a 1989 gazette-based notification process existed, consistent with (but not conclusive proof of the exact year of) the 'as per 1st survey' dataset referenced on the properties page."
+    }
+  ],
+  "districts": [
+    {
+      "district": "Adilabad",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 1734,
+      "area_acres_total": 10119.33,
+      "area_encroached_acres": 9189.12,
+      "category_counts": {"dargah": 76, "graveyard": 439, "mosque": 146, "ashoorkhana": 718, "chilla": 118, "takia": 6, "others": 231},
+      "notes": "Old undivided Adilabad district; post-2016 this area split into Adilabad, Nirmal, Mancherial, Komaram Bheem Asifabad districts. Official site does not yet provide the new-district split."
+    },
+    {
+      "district": "Hyderabad",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 2706,
+      "area_acres_total": 1785.17,
+      "area_encroached_acres": 1469.28,
+      "category_counts": {"dargah": 542, "graveyard": 513, "mosque": 772, "ashoorkhana": 195, "chilla": 262, "takia": 51, "others": 371},
+      "notes": "Hyderabad district boundaries unchanged in 2016 reorganisation. News reports (Akbaruddin Owaisi, cited via search) put Hyderabad encroachment as high as ~82%, roughly consistent with the 1,469.28/1,785.17 = ~82% figure here."
+    },
+    {
+      "district": "Karimnagar",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 1971,
+      "area_acres_total": 1846.26,
+      "area_encroached_acres": 60.03,
+      "category_counts": {"dargah": 54, "graveyard": 760, "mosque": 142, "ashoorkhana": 875, "chilla": 38, "takia": 1, "others": 101},
+      "notes": "Old undivided Karimnagar district; post-2016 split into Karimnagar, Peddapalli, Jagtial, Rajanna Sircilla districts."
+    },
+    {
+      "district": "Khammam",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 1174,
+      "area_acres_total": 534.10,
+      "area_encroached_acres": 143.31,
+      "category_counts": {"dargah": 34, "graveyard": 393, "mosque": 63, "ashoorkhana": 417, "chilla": 210, "takia": 0, "others": 57},
+      "notes": "Old undivided Khammam district; post-2016 Bhadradri Kothagudem district was carved out from part of it (part also went to Andhra Pradesh at bifurcation, but Waqf figures here pertain to the Telangana portion)."
+    },
+    {
+      "district": "Mahaboobnagar",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 4561,
+      "area_acres_total": 11500.18,
+      "area_encroached_acres": 7864.38,
+      "category_counts": {"dargah": 223, "graveyard": 766, "mosque": 297, "ashoorkhana": 1523, "chilla": 1592, "takia": 0, "others": 160},
+      "notes": "Spelled 'Mahaboobnagar' on the official site (also commonly Mahbubnagar). Old undivided district; post-2016 split into Mahabubnagar, Nagarkurnool, Wanaparthy, Jogulamba Gadwal, Narayanpet districts."
+    },
+    {
+      "district": "Medak",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 6325,
+      "area_acres_total": 23910.11,
+      "area_encroached_acres": 23782.03,
+      "category_counts": {"dargah": 302, "graveyard": 1431, "mosque": 469, "ashoorkhana": 2118, "chilla": 1320, "takia": 41, "others": 644},
+      "notes": "Highest institution count and highest total/encroached area of any district (~99.5% of Medak's Waqf land shown as encroached). Old undivided Medak; post-2016 split into Medak, Sangareddy, Siddipet districts."
+    },
+    {
+      "district": "Nalgonda",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 3108,
+      "area_acres_total": 5300.31,
+      "area_encroached_acres": 1400.02,
+      "category_counts": {"dargah": 121, "graveyard": 1070, "mosque": 261, "ashoorkhana": 1127, "chilla": 366, "takia": 1, "others": 162},
+      "notes": "Old undivided Nalgonda; post-2016 split into Nalgonda, Suryapet, Yadadri Bhuvanagiri districts."
+    },
+    {
+      "district": "Nizamabad",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 3597,
+      "area_acres_total": 4795.25,
+      "area_encroached_acres": 23.12,
+      "category_counts": {"dargah": 177, "graveyard": 704, "mosque": 253, "ashoorkhana": 1157, "chilla": 1050, "takia": 3, "others": 253},
+      "notes": "Old undivided Nizamabad; post-2016 split into Nizamabad and Kamareddy districts."
+    },
+    {
+      "district": "Rangareddy",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 5724,
+      "area_acres_total": 14785.17,
+      "area_encroached_acres": 13480.25,
+      "category_counts": {"dargah": 272, "graveyard": 1120, "mosque": 454, "ashoorkhana": 1794, "chilla": 1667, "takia": 9, "others": 408},
+      "notes": "Old undivided Rangareddy; post-2016 split into Rangareddy, Vikarabad, Medchal-Malkajgiri districts. Second-highest encroached acreage after Medak."
+    },
+    {
+      "district": "Warangal",
+      "district_scheme": "old/undivided (pre-2016)",
+      "institutions_total": 3029,
+      "area_acres_total": 2962.19,
+      "area_encroached_acres": 12.37,
+      "category_counts": {"dargah": 68, "graveyard": 1325, "mosque": 195, "ashoorkhana": 1132, "chilla": 166, "takia": 0, "others": 143},
+      "notes": "Old undivided Warangal; post-2016 split into Warangal (Rural/Urban), Jangaon, Mahabubabad, Mulugu districts."
+    }
+  ],
+  "state_totals": {
+    "institutions_total": 33929,
+    "area_acres_total": 77538.07,
+    "area_encroached_acres": 57423.91,
+    "encroachment_pct_approx": 74.0,
+    "category_counts": {"dargah": 1869, "graveyard": 8521, "mosque": 3052, "ashoorkhana": 11056, "chilla": 6789, "takia": 112, "others": 2530},
+    "notes": "These totals reflect only the 10 old/undivided Telangana districts as published on waqf.telangana.gov.in/properties/. They do NOT yet reflect the ~33 post-reorganisation districts. A separately reported 2025 UMEED-portal-transition figure of 'around 85,000 properties' and '~20,000 mutawallis' across '77,000+ acres' (source: newsonair.gov.in, Oct 2025, quoting Waqf Board chairman Azmatullah Hussaini) could not be reconciled to a district level and is not merged into this total — flagged as a data gap."
+  },
+  "board_context": {
+    "history": "Waqf affairs in the Hyderabad State were administered as 'Umoor-E-Mazhabi' under the Nizam's rule. A dedicated Muslim Waqf Board was established by the Raj Pramukh via Notification No. 90 dated 13-01-1955 (published in the Hyderabad Gazette), effective 15-01-1955, under the Wakf Act 1954. Following the Wakf Act 1995 (in force 1-1-1996), the Andhra Pradesh State Waqf Board was reconstituted in July 1996; AP was noted as the first state in India to frame election rules and conduct elections for waqf board representation under that Act. After the 2014 bifurcation of Andhra Pradesh, the Telangana State Waqf Board came into being for the Telangana region, headquartered in Hyderabad, functioning under the Telangana Ministry of Minority Affairs. Current chairman referenced in 2025 sources: Azmatullah Hussaini (an earlier/different source names Mohammed Masiullah Khan as chairman; leadership may have changed between sources).",
+    "survey_years": "The official district/category table is explicitly labelled 'as per 1st survey' but the exact survey year was not stated verbatim on the properties page itself. Corroborating court record (P. Srinivas vs State of Telangana, 10-03-2020, Indian Kanoon) references a Waqf gazette notification dated 09-02-1989 publicly declaring specific parcels (e.g., Boduppal village, Ac. 294.20 guntas) as waqf property — consistent with, but not definitive confirmation of, a survey conducted in the 1960s/70s and gazetted around 1989 as referenced in secondary literature. No evidence was found in these sources of any newer, completed state-wide re-survey; the 2025 shift to the UMEED portal (replacing the now-disabled WAMSI system as of 8 May 2025) appears to be the current mechanism for updating property records, and Telangana was still in early data-upload/training stages as of October 2025.",
+    "known_data_gaps": "1) Telangana Waqf Board admitted to the Telangana High Court that records for 2,186 Waqf properties (which were encroached) were missing, reportedly worsened by the 2014 AP bifurcation. 2) The official properties page itself states district data has not been re-mapped to the ~33 post-2016/2019 reorganised districts ('Separation of data according to the new districts re organisation work is in progress'), so all figures in this file use the 10 old/undivided districts only. 3) A 2025 figure of ~85,000 properties / ~20,000 mutawallis (UMEED portal transition, per Oct 2025 news) is roughly 2.5x the 33,929-institution 1st-survey count and has no public district-level breakdown, so it is not merged into district-level figures here. 4) No mandal-level or GIS/geocoded data was found in any public official source as of this research."
+  }
+}
