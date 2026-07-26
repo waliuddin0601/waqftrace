@@ -6,6 +6,7 @@ import CategoryBreakdownChart from "../components/CategoryBreakdownChart";
 import CategoryBadge, { categoryMeta } from "../components/CategoryBadge";
 import StatusBadge from "../components/StatusBadge";
 import { useProperties } from "../hooks/useSupabaseQuery";
+import { sumParsedAcres } from "../lib/area";
 import type { Property } from "../lib/types";
 
 const CATEGORIES = ["mosque", "dargah", "graveyard", "ashoorkhana", "chillah", "land", "other"];
@@ -38,11 +39,14 @@ export default function Dashboard() {
   const stats = useMemo(() => {
     const flaggedCount = properties.filter((p) => /encroach|litigation|dispute/i.test(p.status ?? "")).length;
     const geocoded = properties.filter((p) => p.lat != null && p.lon != null).length;
+    const { totalAcres, matchedCount } = sumParsedAcres(properties.map((p) => p.area_text));
     return {
       total: properties.length,
       districts: districts.length,
       flaggedCount,
       geocoded,
+      totalAcres,
+      areaMatchedCount: matchedCount,
     };
   }, [properties, districts]);
 
@@ -56,8 +60,14 @@ export default function Dashboard() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         <StatTile label="Properties fetched" value={loadingProps ? "…" : stats.total.toLocaleString()} />
+        <StatTile
+          label="Total area found"
+          value={loadingProps ? "…" : `${stats.totalAcres.toLocaleString(undefined, { maximumFractionDigits: 1 })} ac`}
+          accent="var(--series-3)"
+          sublabel={loadingProps ? undefined : `parsed from ${stats.areaMatchedCount.toLocaleString()} of ${stats.total.toLocaleString()} records`}
+        />
         <StatTile label="Districts covered" value={loadingProps ? "…" : stats.districts.toLocaleString()} />
         <StatTile
           label="Flagged (encroached / litigation)"
