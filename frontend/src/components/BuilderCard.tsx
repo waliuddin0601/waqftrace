@@ -1,5 +1,4 @@
-// TODO: replace with the real LinkedIn URL before deploying.
-const LINKEDIN_URL = "https://www.linkedin.com/in/REPLACE-ME";
+const LINKEDIN_URL = "https://www.linkedin.com/in/mohammed-waliuddin-hussain-481145221";
 
 export default function BuilderCard() {
   return (

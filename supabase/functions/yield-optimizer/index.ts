@@ -3,6 +3,12 @@
 // LLM narrative layer if ANTHROPIC_API_KEY is set — falls back to heuristic-only otherwise.
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+};
+
 // Illustrative base rent (INR per acre per year) by locality tier — seeded from
 // real comparables we could source (e.g. Madina Complex, Hyderabad core) and
 // standard peri-urban/rural discount ratios. Replace with a live rent-index API later.
@@ -70,8 +76,11 @@ async function narrateWithLLM(input: Record<string, unknown>, heuristic: Record<
 }
 
 Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") {
+    return new Response(null, { headers: CORS_HEADERS });
+  }
   if (req.method !== "POST") {
-    return new Response(JSON.stringify({ error: "POST only" }), { status: 405 });
+    return new Response(JSON.stringify({ error: "POST only" }), { status: 405, headers: CORS_HEADERS });
   }
   const body = await req.json().catch(() => ({}));
   const area_acres = Number(body.area_acres);
@@ -80,7 +89,7 @@ Deno.serve(async (req) => {
   const property_id = body.property_id ?? null;
 
   if (!area_acres || area_acres <= 0) {
-    return new Response(JSON.stringify({ error: "area_acres (>0) is required" }), { status: 400 });
+    return new Response(JSON.stringify({ error: "area_acres (>0) is required" }), { status: 400, headers: CORS_HEADERS });
   }
 
   const tier = localityTier(district);
@@ -122,6 +131,6 @@ Deno.serve(async (req) => {
   }
 
   return new Response(JSON.stringify({ ...heuristic, ai_narrative: narrative }), {
-    headers: { "content-type": "application/json" },
+    headers: { "content-type": "application/json", ...CORS_HEADERS },
   });
 });

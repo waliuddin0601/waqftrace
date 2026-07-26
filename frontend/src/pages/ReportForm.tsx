@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { supabase, callFunction } from "../lib/supabase";
+import { useProperties } from "../hooks/useSupabaseQuery";
+import PropertySearch from "../components/PropertySearch";
+import CategoryBadge from "../components/CategoryBadge";
+import type { Property } from "../lib/types";
 
 type Triage = {
   classified: boolean;
@@ -12,8 +16,12 @@ type Triage = {
 
 export default function ReportForm() {
   const [params] = useSearchParams();
-  const propertyId = params.get("property");
+  const preselectedId = params.get("property");
+  const { data: properties } = useProperties();
 
+  const [selectedProperty, setSelectedProperty] = useState<Property | null>(
+    () => properties.find((p) => p.id === preselectedId) ?? null
+  );
   const [reportType, setReportType] = useState("encroachment");
   const [description, setDescription] = useState("");
   const [reporterName, setReporterName] = useState("");
@@ -41,7 +49,7 @@ export default function ReportForm() {
       const { error: insertError } = await supabase.from("reports").insert({
         reporter_name: reporterName || null,
         reporter_contact: reporterContact || null,
-        property_id: propertyId,
+        property_id: selectedProperty?.id ?? null,
         report_type: reportType,
         description,
         photo_urls: photoUrl ? [photoUrl] : [],
@@ -88,11 +96,25 @@ export default function ReportForm() {
     <div className="mx-auto max-w-xl px-4 py-8">
       <h1 className="text-xl font-semibold">Report an issue</h1>
       <p className="text-sm text-ink-secondary mt-1 mb-6">
-        Encroachment, illegal sale, or corruption involving Waqf land? Report it — anonymously if you
-        prefer. Photos help a lot.
+        Encroachment, illegal sale, or corruption involving Waqf land? Find the property, then report —
+        anonymously if you prefer. Photos help a lot.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block text-sm font-medium mb-1">Which property? (optional)</label>
+          <PropertySearch properties={properties} onSelect={setSelectedProperty} />
+          {selectedProperty && (
+            <div className="mt-2 flex items-center justify-between gap-2 rounded-md bg-page px-3 py-2 text-sm">
+              <span className="flex items-center gap-2 truncate">
+                <CategoryBadge category={selectedProperty.category} />
+                <span className="truncate">{selectedProperty.name}</span>
+              </span>
+              <button type="button" onClick={() => setSelectedProperty(null)} className="text-ink-muted text-xs shrink-0">✕</button>
+            </div>
+          )}
+        </div>
+
         <div>
           <label className="block text-sm font-medium mb-1">Issue type</label>
           <select

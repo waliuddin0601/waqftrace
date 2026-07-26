@@ -5,6 +5,12 @@
 // not a gate on the public reporting feature.
 const MODEL = "claude-sonnet-5";
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+};
+
 async function classify(description: string, photoUrl: string | null) {
   const apiKey = Deno.env.get("ANTHROPIC_API_KEY");
   if (!apiKey) return { classified: false, reason: "no_api_key" };
@@ -65,17 +71,20 @@ async function classify(description: string, photoUrl: string | null) {
 }
 
 Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") {
+    return new Response(null, { headers: CORS_HEADERS });
+  }
   if (req.method !== "POST") {
-    return new Response(JSON.stringify({ error: "POST only" }), { status: 405 });
+    return new Response(JSON.stringify({ error: "POST only" }), { status: 405, headers: CORS_HEADERS });
   }
   const body = await req.json().catch(() => ({}));
   const description = String(body.description ?? "").slice(0, 2000);
   const photo_url = body.photo_url ?? null;
 
   if (!description) {
-    return new Response(JSON.stringify({ error: "description is required" }), { status: 400 });
+    return new Response(JSON.stringify({ error: "description is required" }), { status: 400, headers: CORS_HEADERS });
   }
 
   const result = await classify(description, photo_url);
-  return new Response(JSON.stringify(result), { headers: { "content-type": "application/json" } });
+  return new Response(JSON.stringify(result), { headers: { "content-type": "application/json", ...CORS_HEADERS } });
 });
