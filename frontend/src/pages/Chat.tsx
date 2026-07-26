@@ -23,10 +23,10 @@ type QueryResponse = {
 type Turn = { question: string; response?: QueryResponse; error?: string };
 
 const EXAMPLES = [
-  "Show me mosques in Hyderabad",
-  "Which dargahs are under litigation?",
-  "List graveyards in Rangareddy",
-  "Properties with commercial scope",
+  { icon: "🕌", text: "Show me mosques in Hyderabad" },
+  { icon: "🕋", text: "Which dargahs are under litigation?" },
+  { icon: "⚰️", text: "List graveyards in Rangareddy" },
+  { icon: "🏗️", text: "Properties with commercial scope" },
 ];
 
 export default function Chat() {
@@ -52,23 +52,32 @@ export default function Chat() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 flex flex-col" style={{ minHeight: "calc(100vh - 160px)" }}>
-      <div>
-        <h1 className="text-2xl font-semibold">Ask WaqfTrace</h1>
-        <p className="text-sm text-ink-secondary mt-2">
-          Ask in plain English. Claude extracts a structured filter (category / district / status) and
-          runs it through a parameterized query — never raw SQL — against our tracked properties.
+      <div className="rounded-2xl bg-gradient-to-br from-series7 to-series1 px-6 py-8 text-white shadow-lg">
+        <div className="text-3xl" aria-hidden>🔍</div>
+        <h1 className="text-2xl sm:text-3xl font-bold mt-1">Search for your desired land</h1>
+        <p className="text-sm sm:text-base text-white/90 mt-2 max-w-xl">
+          Describe what you're looking for in plain English — no filters, no forms. Claude pulls the
+          exact matching properties for you, straight from the live database.
         </p>
       </div>
 
+      <p className="mt-3 text-xs text-ink-muted">
+        Powered by a safe text-to-filter pipeline (not raw text-to-SQL) — see{" "}
+        <Link to="/about" className="text-series1 hover:underline">About</Link> for how.
+      </p>
+
       {turns.length === 0 && (
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2">
           {EXAMPLES.map((ex) => (
             <button
-              key={ex}
-              onClick={() => ask(ex)}
-              className="rounded-full border border-[var(--border-hairline)] bg-surface px-3 py-1.5 text-xs text-ink-secondary hover:bg-page"
+              key={ex.text}
+              onClick={() => ask(ex.text)}
+              className="flex items-center gap-3 rounded-xl border border-[var(--border-hairline)] bg-surface p-3 text-left text-sm text-ink-secondary shadow-sm transition hover:-translate-y-0.5 hover:shadow-md hover:text-ink"
             >
-              {ex}
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-series1/10 text-lg">
+                {ex.icon}
+              </span>
+              {ex.text}
             </button>
           ))}
         </div>
